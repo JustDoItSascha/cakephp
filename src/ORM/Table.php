@@ -716,6 +716,7 @@ class Table implements RepositoryInterface, EventListenerInterface
      *   will be used
      * - conditions: array with a list of conditions to filter the join with
      * - joinType: The type of join to be used (e.g. INNER)
+     * - propertyName: The property name that should be filled with data from the target table in the source table record
      *
      * This method will return the association object that was built.
      *
