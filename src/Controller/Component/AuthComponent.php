@@ -404,6 +404,7 @@ class AuthComponent extends Component
             $default = '/';
             if (!empty($this->_config['loginRedirect'])) {
                 $default = $this->_config['loginRedirect'];
+                $default['_base'] = false;
             }
             $url = $controller->referer($default, true);
         } else {
